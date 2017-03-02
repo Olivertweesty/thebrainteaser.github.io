@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brain Teaser</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.1.1.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="myscript.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+      <div class="container-fluid jumbotron text-center">
+        <h1>The Brain Teasing Contest Online.<br>
+          <small>You Have Ten minutes to complete the test <br>
+          <i>By Manyasa Oliver</i></small></h1>
+      </div>
+    <!-- end of header -->
+    <!-- start of the body -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="panel panel-info">
+            <div class="panel-heading text-center">Help   <i class="fa fa-file-text"></i></div>
+              <div class="panel body">
+                <ol>
+                  <li>Enter Your Name</li>
+                  <li>Press Begin Test</li>
+                  <li>After getting Your answer. Input it and submit</li>
+                  <li>Fill all answers and Press "Get Results" Button</li>
+                </ol>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <form class="form-center">
+            <div class="form-group text-center">
+              <label for="#name">Please Enter Your Name To Activate The Test</label>
+              <input type="text" class="form-control" id="name" value=""><br>
+              <button type="button" class="btn btn-info" onclick="mjina()">Begin Test</button><br>
+                <p class="text-info text-center" id="inf"></p>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1">
+          <!-- col left -->
+        </div>
+        <div class="col-md-10 well" id="main">
+            <!-- panels -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">Question One</div>
+                          <div class="panel-body text-center"id="pan">
+                              <img src="images/brainteaser1.jpg" alt="">
+                              <br>
+                              <form role="form" class="form-center">
+                                <label>Answer</label><br>
+                                <input type="number" class="form-control" id="inpOne" name="ans" value=""><br>
+                                <button type="button" value="brt" class="btn btn-info" onclick="bOne()">OK Submit</button><br>
+                                <p id="stOne"></p>
+                              </form>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="panel panel-success">
+                      <div class="panel-heading">Question Two</div>
+                        <div class="panel-body text-center"id="pan">
+                            <img src="images/brainteaser11.jpg" alt="">
+                            <br>
+                            <form role="form" class="form-center">
+                              <label>Answer</label><br>
+                              <input type="number" class="form-control" name="ans" id="inpTwo" value=""><br>
+                              <button type="button" value="brt" class="btn btn-info" onclick="bTwo()">OK Submit</button><br>
+                              <p id="stTwo"></p>
+                            </form>
+                        </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="panel panel-success">
+                      <div class="panel-heading">Question Three</div>
+                        <div class="panel-body text-center"id="pan">
+                            <img src="images/brainteaser3.jpg" alt="">
+                            <br>
+                            <form role="form" class="form-center">
+                              <label>Answer</label><br>
+                              <input type="number" class="form-control" id="inpThree" name="ans" value=""><br>
+                              <button type="button" value="brt" class="btn btn-info" onclick="bThree()">OK Submit</button><br>
+                              <p id="stThree"></p>
+                            </form>
+                        </div>
+                  </div>
+                </div>
+            </div>
+            <!-- second row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">Question Four</div>
+                          <div class="panel-body text-center"id="pan">
+                              <img src="images/brainteaser4.jpg" alt="">
+                              <br>
+                              <form role="form" class="form-center">
+                                <label>Answer</label><br>
+                                <input type="number" class="form-control" id="inpFour" name="ans" value=""><br>
+                                <button type="button" value="brt" class="btn btn-info" onclick="bFour()">OK Submit</button><br>
+                                <p id="stFour"></p>
+                              </form>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="panel panel-success">
+                      <div class="panel-heading">Question Five</div>
+                        <div class="panel-body text-center"id="pan">
+                            <img src="images/brainteaser5.jpg" alt="">
+                            <br>
+                            <form role="form" class="form-center">
+                              <label>Answer</label><br>
+                              <input type="number" class="form-control" id="inpFive" name="ans" value=""><br>
+                              <button type="button" value="brt" class="btn btn-info" onclick="bFive()">OK Submit</button><br>
+                              <p id="stFive"></p>
+                            </form>
+                        </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="panel panel-success">
+                      <div class="panel-heading">Question six</div>
+                        <div class="panel-body text-center"id="pan">
+                            <img src="images/brainteaser6.jpg" alt="">
+                            <br>
+                            <form role="form" class="form-center">
+                              <label>Answer</label><br>
+                              <input type="number" class="form-control" id="inpSix" name="ans" value=""><br>
+                              <button type="button" value="brt" class="btn btn-info" onclick="bSix()">OK Submit</button><br>
+                              <p id="stSix"></p>
+                            </form>
+                        </div>
+                  </div>
+                </div>
+            </div>
+            <!-- third row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">Question Seven</div>
+                          <div class="panel-body text-center"id="pan">
+                              <img src="images/brainteaser7.jpg" alt="">
+                              <br>
+                              <form role="form" class="form-center">
+                                <label>Answer</label><br>
+                                <input type="number" class="form-control" id="inpSeven" name="ans" value=""><br>
+                                <button type="button" value="brt" class="btn btn-info" onclick="bSeven()">OK Submit</button><br>
+                                <p id="stSeven"></p>
+                              </form>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="panel panel-success">
+                      <div class="panel-heading">Question Eight</div>
+                        <div class="panel-body text-center"id="pan">
+                            <img src="images/brainteaser8.png" alt="">
+                            <br>
+                            <form role="form" class="form-center">
+                              <label>Answer</label><br>
+                              <input type="number" class="form-control" id="inpEight" name="ans" value=""><br>
+                              <button type="button" value="brt" class="btn btn-info" onclick="bEight()">OK Submit</button><br>
+                              <p id="stEight"></p>
+                            </form>
+                        </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="panel panel-success">
+                      <div class="panel-heading">Question Nine</div>
+                        <div class="panel-body text-center"id="pan">
+                            <img src="images/brainteaser9.jpg" alt="">
+                            <br>
+                            <form role="form" class="form-center">
+                              <label>Answer</label><br>
+                              <input type="number" class="form-control" id="inpNine" name="ans" value=""><br>
+                              <button type="button" value="brt" class="btn btn-info" onclick="bNine()">OK Submit</button><br>
+                              <p id="stNine"></p>
+                            </form>
+                        </div>
+                  </div>
+                </div>
+            </div>
+            <!-- fourth row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">Question Ten</div>
+                          <div class="panel-body text-center"id="pan">
+                              <img src="images/brainteaser10.jpg" alt="">
+                              <br>
+                              <form role="form" class="form-center">
+                                <label>Answer</label><br>
+                                <input type="number" class="form-control" id="inpTen" name="ans" value=""><br>
+                                <button type="button" value="brt" class="btn btn-info" onclick="bTen()">OK Submit</button><br>
+                                <p id="stTen"></p>
+                              </form>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="panel panel-success">
+                      <div class="panel-heading">Question Eleven</div>
+                        <div class="panel-body text-center"id="pan">
+                            <img src="images/brainteaser13.jpg" alt="">
+                            <br>
+                            <form role="form" class="form-center">
+                              <label>Answer</label><br>
+                              <input type="number" class="form-control" id="inpEleven" name="ans" value=""><br>
+                              <button type="button" value="brt" class="btn btn-info" onclick="bEleven()">OK Submit</button><br>
+                              <p id="stEleven"></p>
+                            </form>
+                        </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="panel panel-success">
+                      <div class="panel-heading">Question Twelve</div>
+                        <div class="panel-body text-center"id="pan">
+                            <img src="images/brainteaser12.jpg" alt="">
+                            <br>
+                            <form role="form" class="form-center">
+                              <label>Answer</label><br>
+                              <input type="number" class="form-control" id="inpTwelve" name="ans" value=""><br>
+                              <button type="button" value="brt" class="btn btn-info" onclick="bTwelve()">OK Submit</button><br>
+                              <p id="stTwelve"></p>
+                            </form>
+                        </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1">
+
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" onclick="getRes()">
+            Click To Get Your Results
+            </button>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- end of the body -->
+<footer class="container-fluid" style="background-color:#333">
+      <br>
+      <p class="text-danger text-center">Disclaimer! This Web was made For Testing Purposes Dont Take Anything Serious!!!!!</p>
+      <div class="row">
+        <div class="col-md-4">
+          <ul>
+            <li>Name: <span id="dt" class="text-info">Manyasa Oliver</span></li>
+            <li>AKA: <span id="dt" class="text-info">Fake Joker</span></li>
+            <li>Contact: <span id="dt" class="text-info">+254787279152</span></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul>
+            <li><i class="fa fa-facebook text-primary" id="dt"></i> Oliver Watiti</li>
+            <li><i class="fa fa-googleplus text-primary" id="dt"></i> Oliver Watiti</li>
+            <li><i class="fa fa-twitter text-primary" id="dt"></i> M_Oliver_W</li>
+            <li><i class="fa fa-whatsapp text-primary" id="dt"></i> +254787279152</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <p id="dt"style="color:white;">The website was made to help people improve
+          their thinking speed and also Help people Have fun</p>
+          <p class="text-center" style="color:white;">Thank You For Visiting!!</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-center" id="myModalLabel">The Brain Teasing Contest</h4>
+          </div>
+          <div class="modal-body">
+            <p id="Xmodal"></p>
+            <hr>
+            <p id="cont">Contact The Administrator for More Similar Test And Dont forget to Follow us On instagram <span class="text-danger">Oly_Coder</span></p>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+  </body>
+</html>
