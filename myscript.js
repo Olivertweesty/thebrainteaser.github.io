@@ -26,7 +26,7 @@ function bOne() {
 
 function bTwo() {
   var two=document.getElementById('inpTwo').value;
-    if (two==-1) {
+    if (two==1) {
       sum=sum+10;
       $("#stTwo").html("<p class='text-success'><i class='fa fa-check'>Awesome Correct</i></p>");
     }
