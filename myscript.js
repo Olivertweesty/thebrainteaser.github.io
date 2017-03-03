@@ -146,7 +146,7 @@ function bTwelve() {
     }
 }
 function getRes() {
-  $("#Xmodal").text("Congradulations "+jina+ " You Got " +sum+ " Percent... ");
+  $("#Xmodal").text("Congratulations "+jina+ " You Got " +sum+ " Percent... ");
   $("img").fadeOut();
 }
 // start of jquery-3
