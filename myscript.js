@@ -92,7 +92,7 @@ function bSeven() {
 }
 function bEight() {
   var eight=document.getElementById('inpEight').value;
-    if (eight==35) {
+    if (eight==47) {
       sum=sum+7;
       $("#stEight").html("<p class='text-success'><i class='fa fa-check'>Awesome Correct</i></p>");
     }
